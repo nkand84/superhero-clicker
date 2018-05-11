@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
 import cards from "../../cards.json";
 import Card from '../Card';
+import '../Card/Card.css';
 
 class Game extends Component {
   state = {
     heros: cards,
     score: 0,
-    randomNumber: 0,
-    highScore:0
+    clickFlag: 0,
+    highScore: 0
   }
-// onclick score increments and high score also 
-// when u click on an img twice score resets to zero and high score remains same
-// on click array is shuffled eachtime randomly
- 
-  componentDidMount() {
-    // let random = Math.floor(Math.random() * 6) + 1;
-    // this.setState({
-    //   randomNumber: random
-    // });
-  }
-
+  clickstate = {}
+  
   shuffleArray = (array) => {
     let i = array.length - 1;
     for (; i > 0; i--) {
@@ -32,17 +24,35 @@ class Game extends Component {
   }
 
   cardClickedOn = (id) => {
+    if (!(id in this.clickstate)){
+      this.clickstate[id] = 0
+    }
     
-     this.setState({
-        score: this.state.score + 1,
-        highScore: this.state.highScore + 1
-     });
-     this.state.heros = this.shuffleArray(cards);
+    if (this.clickstate[id] === 0) {
+      this.state.score = this.state.score + 1;
+      if(this.state.score > this.state.highScore){
+        this.state.highScore = this.state.highScore + 1;
+      }
+      this.setState({
+       score: this.state.score,
+       highScore: this.state.highScore
+      });
+      this.clickstate[id] = 1;
+    }
+
+    else if(this.clickstate[id] === 1){
+      this.setState({
+        score: 0,
+        highScore: this.state.highScore
+      });
+      this.clickstate = {}
+    }
+    this.state.heros = this.shuffleArray(cards);
   };
 
   render() {
     return (
-      <div id="cotainer-fluid">
+      <div className="cotainer-fluid buzz">
         <nav className="navbar navbar-default">
           <div className="container-fluid">
             <div className="navbar-header">
@@ -50,7 +60,7 @@ class Game extends Component {
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <span>High Score: {this.state.highScore}</span>
                 &nbsp;&nbsp;&nbsp;&nbsp;<span>Score: {this.state.score}</span>
-              </span> 
+              </span>
               <a className="navbar-brand" href="#">
                 <img alt="Brand" className="logo-img" src="/assets/images/marvel.jpg" />
 
