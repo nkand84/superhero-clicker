@@ -2,9 +2,33 @@
   text-align: center;
 }
 
+#root{
+  width: 100%;
+  margin: 0 auto;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+.navbar{
+ background-color: rgb(212, 56, 56);
+ height:100px;
+}
+#score-text{
+  font-size: 25px;
+  font-weight: 600;
+  float:right;
+  margin-top: 30px;
+    color: rgb(196, 180, 155);
+}
+.logo-img{
+  width:150px;
+  height: 80px;
+  margin-top: -5px;
+}
+.img-group{
+  width:200px;
+  height:200px;
 }
 
 .App-header {

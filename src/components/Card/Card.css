@@ -1,0 +1,14 @@
+.hero-card {
+     width:180px;
+     height:180px;
+     background-size: cover;
+     transition: transform .5s;
+     margin:0px 50px 30px 15px;
+     
+}
+
+.hero-card:hover {
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25); 
+}

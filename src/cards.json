@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/ant.png",
+        "name": "Antman"
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/ww2.png",
+        "name": "Wonder Woman"
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/bat.png",
+        "name": "Batman"
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/wolv.png",
+        "name": "Wolverine"
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/spider.png",
+        "name": "Spiderman"
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/hulk.png",
+        "name": "Hulk"
+    },
+    {
+        "id": 7,
+        "image": "/assets/images/cap.png",
+        "name": "Captain America"
+    },
+    {
+        "id": 8,
+        "image": "/assets/images/iron.png",
+        "name": "Ironman"
+    },
+    {
+        "id": 9,
+        "image": "/assets/images/dead.png",
+        "name": "Deadpool"
+    },
+    {
+        "id": 10,
+        "image": "/assets/images/panther.png",
+        "name": "Black Panther"
+    }
+]
