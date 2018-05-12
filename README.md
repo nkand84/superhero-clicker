@@ -1,5 +1,4 @@
 <h1>Superhero Clicky Game with React js</h1>
-<hr>
 <h3>App Functionality</h3>
 <p>The application should render different images (of your choice) to the screen. </p>
 <p>Each image should listen for click events.</p>
