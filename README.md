@@ -1,3 +1,18 @@
+<h1>Superhero Clicky Game with React js</h1>
+<hr>
+<h3>App Functionality</h3>
+<p>The application should render different images (of your choice) to the screen. </p>
+<p>Each image should listen for click events.</p>
+<p>The application should keep track of the user's score. The user's score should be incremented when clicking an image for the first time. The user's score should be reset to "0" if they click the same image more than once.</p>
+<p>Every time an image is clicked, the images rendered to the page should shuffle themselves in a random order.
+Once the user's score is reset after an incorrect guess, the game should restart.</p>
+<p>Enjoy Marvel Superhero collection....Click ..Click Away!!<p>
+<h3>Author</h3>
+<p>Nitya Kandukuri</p>
+<img src="/public/assets/images/superhero.png" alt="superhero react app"/>
+<br><br>
+<h3>Create React App</h3>
+<hr/>
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
