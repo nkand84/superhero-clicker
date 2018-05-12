@@ -14,17 +14,18 @@
  background-color: rgb(212, 56, 56);
  height:100px;
 }
-#score-text{
+.score-text{
   font-size: 25px;
   font-weight: 600;
   float:right;
   margin-top: 30px;
-    color: rgb(196, 180, 155);
+  color: rgb(196, 180, 155);
 }
 .logo-img{
   width:150px;
   height: 80px;
   margin-top: -5px;
+  float:left;
 }
 .img-group{
   width:200px;

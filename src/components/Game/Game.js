@@ -56,10 +56,11 @@ class Game extends Component {
         <nav className="navbar navbar-default">
           <div className="container-fluid">
             <div className="navbar-header">
-              <span id="score-text">
+               <span class="score-text"> Click on an image to begin but dont click on it twice!!</span> 
+              <span class="score-text">
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <span>High Score: {this.state.highScore}</span>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span>Score: {this.state.score}</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span>Score: {this.state.score}</span> &nbsp;&nbsp;&nbsp;&nbsp;
               </span>
               <a className="navbar-brand" href="#">
                 <img alt="Brand" className="logo-img" src="/assets/images/marvel.jpg" />
