@@ -6,6 +6,7 @@
 <p>Every time an image is clicked, the images rendered to the page should shuffle themselves in a random order.
 Once the user's score is reset after an incorrect guess, the game should restart.</p>
 <p>Enjoy Marvel Superhero collection....Click ..Click Away!!<p>
+<hr>
 <h3>Author</h3>
 <p>Nitya Kandukuri</p>
 <img src="/public/assets/images/superhero.png" alt="superhero react app"/>
